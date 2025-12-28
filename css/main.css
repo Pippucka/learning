@@ -1,15 +1,14 @@
-@import "https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap";
-* {
-    font-family: "Roboto Serif", serif;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
-}
 b {
-    color: rgb(9, 87, 233);
+    color: rgb(0, 38, 87);
 }
 
 body {
     cursor: url(gif/cursor.png), default;
     text-align: center;
+    color: #ffffff;
+    font-family: "Nunito", sans-serif;
 
 }
 
@@ -22,26 +21,69 @@ body {
     z-index: -1;
 }
 
+#register input {
+    width: 10%;
+    padding: 12px 14px;
+    margin-top: 6px;
+    border-radius: 10px;
+    border: 2px solid #2563eb;
+    background: #ffffff;
+    color: #000000;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#register input::placeholder {
+    color: #6999af;
+}
+
+#register select {
+    width: 10%;
+    padding: 12px 14px;
+    margin-top: 6px;
+    border-radius: 10px;
+    border: 2px solid #2563eb;
+    background: #ffffff;
+    color: #000000;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
 
 ul, ol {
   list-style-position: inside;
   padding-left: 0;
 }
 
+#suck_losti input{
+    width: 10%;
+    padding: 12px 14px;
+    margin-top: 6px;
+    border-radius: 10px;
+    border: 2px solid #2563eb;
+    background: #ffffff;
+    color: #000000;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
 
 .main-text{     
+  font-family: "Roboto Serif", serif;
   font-size: 50px;
   text-transform: uppercase;
   background: #A5CEE0;
   background: linear-gradient(90deg,rgba(165, 206, 224, 1) 0%, rgba(78, 174, 212, 1) 50%, rgb(2, 154, 214) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: #0093c091;
+  color: #00000091;
   display: table;
   margin: 20px auto;
   text-decoration: none;
-  text-shadow: 0 3px 30px
-
 }
 
 .main-text:hover
@@ -57,7 +99,7 @@ text-divider {
   display: flex;
   align-items: center;
   margin: 40px 0;
-  color: #1671bb;
+  color: #ffffff;
   font-size: 14px;
 }
 
@@ -66,7 +108,7 @@ text-divider::after {
   content: "";
   flex: 1;
   height: 1px;
-  background: #2f4eff69;
+  background: #ffffff;
 }
 
 text-divider::before {
@@ -126,6 +168,20 @@ text-divider:empty::after {
 #block2 button:active {
   transform: translateY(0);
   box-shadow: 0 5px 10px rgba(20, 181, 255, 0.671);
+}
+
+#NewsForm textarea {
+    width: 10%;
+    padding: 12px 14px;
+    margin-top: 6px;
+    border-radius: 10px;
+    border: 2px solid #2563eb;
+    background: #ffffff;
+    color: #000000;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 #friend {
