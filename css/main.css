@@ -1,16 +1,46 @@
-b {
-    color: rgb(9, 233, 177);
+@import "https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap";
+* {
+    font-family: "Roboto Serif", serif;
+
 }
-.main-text{
+b {
+    color: rgb(9, 87, 233);
+}
+
+body {
+    cursor: url(gif/cursor.png), default;
+    text-align: center;
+
+}
+
+.bg {
+    position: fixed;
+    inset: 0;
+    background: url('https://img3.akspic.ru/crops/5/8/1/1/21185/21185-biom-gora-dnevnoe_vremya-iskusstvo-pejzazhi_gor-1920x1080.jpg') center / cover no-repeat;
+    filter: blur(10px);
+    transform: scale(1.05);
+    z-index: -1;
+}
+
+
+ul, ol {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+
+.main-text{     
   font-size: 50px;
   text-transform: uppercase;
-  background: linear-gradient(90deg, rgba(87, 199, 134, 0.712) 0%, rgba(76, 176, 107, 1) 50%, rgba(15, 138, 54, 1) 100%);
+  background: #A5CEE0;
+  background: linear-gradient(90deg,rgba(165, 206, 224, 1) 0%, rgba(78, 174, 212, 1) 50%, rgb(2, 154, 214) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: #0B2349;
+  color: #0093c091;
   display: table;
   margin: 20px auto;
   text-decoration: none;
+  text-shadow: 0 3px 30px
 
 }
 
@@ -21,4 +51,83 @@ b {
 
 .blood{
     color: red;
+}
+
+text-divider {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+  color: #1671bb;
+  font-size: 14px;
+}
+
+text-divider::before,
+text-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #2f4eff69;
+}
+
+text-divider::before {
+  margin-right: 15px;
+}
+
+text-divider::after {
+  margin-left: 15px;
+}
+
+text-divider:empty::before,
+text-divider:empty::after {
+  margin: 0;
+}
+
+#block button {
+  padding: 12px 30px;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(135deg,#6a5af9, #00c6ff);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+
+  box-shadow: 0 8px 20px rgba(35, 185, 255, 0.253);
+  transition: all 0.3s ease;
+}
+
+#block button:hover {
+    box-shadow: 0 12px 25px rgba(24, 182, 255, 0.375);
+    transform: translateY(-2px);
+}
+  
+#block button:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 10px rgba(20, 181, 255, 0.671);
+}
+
+#block2 button {
+  padding: 12px 30px;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(135deg,#6a5af9, #00c6ff);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+
+  box-shadow: 0 8px 20px rgba(35, 185, 255, 0.253);
+  transition: all 0.3s ease;
+}
+
+#block2 button:hover {
+    box-shadow: 0 12px 25px rgba(24, 182, 255, 0.375);
+    transform: translateY(-2px);
+}
+
+#block2 button:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 10px rgba(20, 181, 255, 0.671);
+}
+
+#friend {
+  margin-left: 11 0px;
 }

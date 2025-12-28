@@ -14,16 +14,23 @@
     </head>
 
     <body>
+
         <!-- Новости сайта --> 
+         <div class="bg"></div>
+
 
          <div>
-            <h1 class="main-text""><i>НОВОСТИ ДНЯ</i></h1><hr>
+            <h1 class="main-text""><i>НОВОСТИ ДНЯ</i></h1>
+            <text-divider>✦ ✦ ✦</text-divider>
          <p>это <b>не крутой</b> сайт</p>
          <h5>на деле, это <i>крутой</i> сайт</h5>
-         <p>я <strike><big>выебал</big></strike> купил арбуз</p><hr>
+         <p>я <strike><big>выебал</big></strike> купил арбуз</p>
+         <text-divider>✦ ✦ ✦</text-divider>
 
-         <h4>Далее к неоч важным новостям хз</h4><hr>
-         <p>У <b>fr33fri3nd</b> сдохла семья, поздравим его</p><hr><br><br>
+         <h4>Далее к неоч важным новостям хз</h4>
+         <text-divider>✦ ✦ ✦</text-divider>
+         <p>У <b>fr33fri3nd</b> сдохла семья, поздравим его</p>
+         <text-divider>✦ ✦ ✦</text-divider><br>
       </div>
       <div>
          <img src="gif/doc_2025-12-23_19-43-39.gif " width="320px" height="320" alt="РАЗРАБОТЧИК САЙТА...">
@@ -31,15 +38,15 @@
          <img src="gif/strongman_with_blur.jpg " width="320px" height="320" alt="МОЁ ПИЗДАТОЕ ТЕЛО">
       </div>
 
-         <div><hr>
-            <p><b>Планы на день</b></p><hr>
+         <div><text-divider>✦ ✦ ✦</text-divider>
+            <p><b>Планы на день</b></p><text-divider>✦ ✦ ✦</text-divider>
 
          <ol type="1">
-            <li title="ненавижу просыпаться"></title>Проснулся</li>
+            <li title="ненавижу просыпаться"></title>Проснулся</li>  
             <li title="зазачка....">Дал <strike>зазу</strike></li>
             <li title="ура...">Поспал</li>
             <li title="зазачка....">Дал <strike>зазу</strike></li>
-         </ol><hr><br>
+         </ol><text-divider>✦ ✦ ✦</text-divider><br>
       </div>
 
          <div>
@@ -47,19 +54,24 @@
             <li>Умер нах</li>
             <li>Воскрес нах</li>
             <li>Опять умер нах</li>
-         </ul><br><hr>
+         </ul><br><text-divider>✦ ✦ ✦</text-divider>
          <ul>
             <li><a href="https://imgur.com/a/3cAmDwn" title="Нажми на меня сладкий :3" target="_blank">жопень хамста</a></li>
-            <a href="https://t.me/humststars_bot">Написать нам</a></div><hr>
+            <li><a href="https://t.me/humststars_bot" target="_blank">Написать нам</a></div><text-divider>✦ ✦ ✦</text-divider></li>
          </ul>
-         <div><img src="gif/loser.png"> <!-- Фрифренд -->
+         <div id="friend">
+         <img src="gif/loser.png"> <!-- Фрифренд -->
          <img src="gif/arrow.png" width="170px"> <!-- Стрелка -->
          <img src="gif/insult.jpg" width="400px"height="153px"><br> <!-- Инсульт мем -->
+         </div>
 
-         <div><hr>
+         <div><text-divider>✦ ✦ ✦</text-divider>   
             <form action="" method="post">
                <label for="001">Кому седня будет сосать хуй лости</label>
-               <input name="name" type="text" placeholder="Напиши его имя" maxlength="22" id="001"><hr>
+               <input name="name" type="text" placeholder="Напиши его имя" maxlength="22" id="001">
+
+            <text-divider>✦ ✦ ✦</text-divider>
+
 
             </form>
          </div>
@@ -95,28 +107,28 @@
 
          </div>
 
-         <div>
+         <div id="registerform">
             <p><b>выберите из предложенного:</b></p>
             <p>я здоровый человек <input type="radio" name="normal_guy"></p>
             <p>мне нравятся фурри <input type="radio" name="normal_guy" ></p>
-            <img src="gif/angry.png" width="80px" height="80" alt="фрифренд следит за вами..."><br><!-- удивленный фрифренд -->
-            <button type="reset">Зарегистрироваться</button>
-            <h6 style="color: red;">нажимая кнопку регистрации вы подписываете контракт <b class="blood">КРОВЬЮ</b> с дьяволом</h6><hr>
-         </div>
+      
+         <div id="block2">
+            <button type="reset" form="registerform">Зарегистрироваться</button>
+            <h6 style="color: red;">нажимая кнопку регистрации вы подписываете контракт <b class="blood">КРОВЬЮ</b> с дьяволом</h6>
+         </div><text-divider>✦ ✦ ✦</text-divider>
 
          <img src="gif/losti.gif">
 
          <div>
             <p><b>Предложить свою новость:</b></p>
-            <form>
+            <form id="newsForm">
                <textarea style="width: 200px; height: 100px;" placeholder="Напишите новость"></textarea>
-               <br><button type="reset">Отправить</button>
+               
             </form>
          </div>
-      </div>
 
-         <div>
-            
+         <div id="block">
+            <button type="reset" form="newsForm">Отправить</button>
          </div>
 
          <!-- JavaScript Скрипты -->
