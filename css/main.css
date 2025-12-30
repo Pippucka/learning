@@ -1,98 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
 b {
-    color: rgb(0, 38, 87);
+  color: rgb(0, 38, 87);
 }
 
 body {
-    cursor: url(gif/cursor.png), default;
-    text-align: center;
-    color: #ffffff;
-    font-family: "Nunito", sans-serif;
-
+  cursor: url(gif/cursor.png), default;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
 }
 
 .bg {
-    position: fixed;
-    inset: 0;
-    background: url('https://img3.akspic.ru/crops/5/8/1/1/21185/21185-biom-gora-dnevnoe_vremya-iskusstvo-pejzazhi_gor-1920x1080.jpg') center / cover no-repeat;
-    filter: blur(10px);
-    transform: scale(1.05);
-    z-index: -1;
+  position: fixed;
+  inset: 0;
+  background: url('https://img3.akspic.ru/crops/5/8/1/1/21185/21185-biom-gora-dnevnoe_vremya-iskusstvo-pejzazhi_gor-1920x1080.jpg') center / cover no-repeat;
+  filter: blur(10px);
+  transform: scale(1.05);
+  z-index: -1;
+
 }
 
-#register input {
-    width: 10%;
-    padding: 12px 14px;
-    margin-top: 6px;
-    border-radius: 10px;
-    border: 2px solid #2563eb;
-    background: #ffffff;
-    color: #000000;
-    font-size: 14px;
-    outline: none;
-    transition: all 0.3s ease;
+#register input,
+#register select,
+#suck_losti input,
+#NewsForm textarea {
+  width: 10%;
+  padding: 12px 14px;
+  margin-top: 6px;
+  border-radius: 10px;
+  border: 2px solid #2563eb;
+  background: #ffffff;
+  color: #000000;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
 }
 
-#register input::placeholder {
-    color: #6999af;
+#register input::placeholder,
+#NewsForm textarea::placeholder {
+  color: #6999af;
 }
 
 #register select {
-    width: 10%;
-    padding: 12px 14px;
-    margin-top: 6px;
-    border-radius: 10px;
-    border: 2px solid #2563eb;
-    background: #ffffff;
-    color: #000000;
-    font-size: 14px;
-    outline: none;
-    transition: all 0.3s ease;
-    cursor: pointer;
+  cursor: pointer;
 }
 
+#suck_losti input,
+#NewsForm textarea {
+  cursor: text;
+}
 
 ul, ol {
   list-style-position: inside;
   padding-left: 0;
 }
 
-#suck_losti input{
-    width: 10%;
-    padding: 12px 14px;
-    margin-top: 6px;
-    border-radius: 10px;
-    border: 2px solid #2563eb;
-    background: #ffffff;
-    color: #000000;
-    font-size: 14px;
-    outline: none;
-    transition: all 0.3s ease;
-    cursor: pointer;
+a {
+  text-decoration: none;
 }
 
-.main-text{     
+.main-text {
   font-family: "Roboto Serif", serif;
   font-size: 50px;
   text-transform: uppercase;
-  background: #A5CEE0;
-  background: linear-gradient(90deg,rgba(165, 206, 224, 1) 0%, rgba(78, 174, 212, 1) 50%, rgb(2, 154, 214) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(165, 206, 224, 1) 0%,
+    rgba(78, 174, 212, 1) 50%,
+    rgb(2, 154, 214) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: #00000091;
   display: table;
   margin: 20px auto;
   text-decoration: none;
 }
 
-.main-text:hover
-{
-    cursor: pointer;
+.main-text:hover {
+  cursor: pointer;
 }
 
-.blood{
-    color: red;
+.blood {
+  color: red;
 }
 
 text-divider {
@@ -124,66 +114,31 @@ text-divider:empty::after {
   margin: 0;
 }
 
-#block button {
-  padding: 12px 30px;
-  font-size: 16px;
-  color: #fff;
-  background: linear-gradient(135deg,#6a5af9, #00c6ff);
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-
-  box-shadow: 0 8px 20px rgba(35, 185, 255, 0.253);
-  transition: all 0.3s ease;
-}
-
-#block button:hover {
-    box-shadow: 0 12px 25px rgba(24, 182, 255, 0.375);
-    transform: translateY(-2px);
-}
-  
-#block button:active {
-  transform: translateY(0);
-  box-shadow: 0 5px 10px rgba(20, 181, 255, 0.671);
-}
-
+#block button,
 #block2 button {
   padding: 12px 30px;
   font-size: 16px;
   color: #fff;
-  background: linear-gradient(135deg,#6a5af9, #00c6ff);
+  background: linear-gradient(135deg, #6a5af9, #00c6ff);
   border: none;
   border-radius: 30px;
   cursor: pointer;
-
   box-shadow: 0 8px 20px rgba(35, 185, 255, 0.253);
   transition: all 0.3s ease;
 }
 
+#block button:hover,
 #block2 button:hover {
-    box-shadow: 0 12px 25px rgba(24, 182, 255, 0.375);
-    transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(24, 182, 255, 0.375);
+  transform: translateY(-2px);
 }
 
+#block button:active,
 #block2 button:active {
   transform: translateY(0);
   box-shadow: 0 5px 10px rgba(20, 181, 255, 0.671);
 }
 
-#NewsForm textarea {
-    width: 10%;
-    padding: 12px 14px;
-    margin-top: 6px;
-    border-radius: 10px;
-    border: 2px solid #2563eb;
-    background: #ffffff;
-    color: #000000;
-    font-size: 14px;
-    outline: none;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
 #friend {
-  margin-left: 11 0px;
+  margin-left: 110px;
 }
