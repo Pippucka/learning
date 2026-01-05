@@ -33,3 +33,13 @@ var matrix = [
     [5, 15, 76], [25, "число", 5], [20, 51,"буква"]
 ]
 console.log(matrix)
+
+for(var i = 100; i > 5; i /= 2) {
+    console.log(i);
+}
+
+var j = 1000;
+while(j >= 500) {
+    console.log(j);
+    j -= 20;
+}
