@@ -141,3 +141,26 @@ text-divider:empty::after {
 #friend {
   margin-left: 110px;
 }
+
+#upbutton button {
+  padding: 12px 70px;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(135deg, #6a5af9, #00c6ff);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(35, 185, 255, 0.253);
+  transition: all 0.3s ease;
+  margin-right: 1500px;
+}
+
+#upbutton button:hover {
+  box-shadow: 0 12px 25px rgba(24, 182, 255, 0.375);
+  transform: translateY(-2px);
+}
+
+#upbutton button:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 10px rgba(20, 181, 255, 0.671);
+}

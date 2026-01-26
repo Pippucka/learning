@@ -43,3 +43,8 @@ while(j >= 500) {
     console.log(j);
     j -= 20;
 }
+
+function infoButton()
+    {
+        alert('ебанный нищий пацан')
+    }
